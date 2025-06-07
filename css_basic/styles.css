@@ -2,6 +2,7 @@ body{
 
     display: flex;
     flex-direction: column;
+    background-color: wheat;
      
 }
 
@@ -24,6 +25,7 @@ article{
     flex: 2;
     overflow-y: auto;
     
+    
 }
 
 aside{
@@ -31,3 +33,23 @@ aside{
     overflow-y: auto;
    
 }
+.hero{
+    color: aqua;
+}
+
+.About{
+    color: chartreuse;
+}
+header li.logo {
+	font-size: 4em;
+    
+}
+/* aside p {
+	border: 1px solid #bbb;
+	background: #ddd;
+	color: black;
+} */
+
+/* aside {
+	background: #FAFAFA;
+} */
