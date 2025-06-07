@@ -5,6 +5,12 @@ body{
      
 }
 
+body .works_on_smartphone{
+  	display: block;
+    
+  }
+
+
 main{
     display: flex;
     flex-direction: row;
