@@ -1,4 +1,4 @@
-# Complete Webpage HTML Skeleton
+<!-- # Complete Webpage HTML Skeleton
 
 This project contains the full HTML skeleton for a multipurpose website layout including:
 
@@ -43,4 +43,4 @@ This project is open source and free to use for any purpose.
 ---
 
 Created as part of an HTML advanced layout exercise.
-
+ -->
