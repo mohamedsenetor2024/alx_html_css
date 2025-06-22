@@ -1,0 +1,412 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: wheat;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Background */
+.hero {
+  background-image: url('../images/headphones_hero_1.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Layout Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Content Layout */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  margin-right: 20px;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    position: absolute;
+    left: 0;
+  }
+
+  .main-nav {
+    display: none;
+  }
+}
+
+/* Logo */
+.logo {
+  margin-left: 15px; /* Push logo a bit to the right */
+  cursor: pointer;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.2));
+  transition: transform 0.2s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation */
+.main-nav {
+  margin-right: 10px; /* Push nav slightly away from right */
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: lowercase;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #FF6565;
+}
+
+/* Hero Text */
+.hero-content {
+  text-align: center;
+  margin-top: 80px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  opacity: 0.95;
+  cursor: pointer;
+}
+
+.cta-button {
+  background-color: #e63946;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  opacity: 0.9;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  color: #ff6b6b; 
+ 
+}
+
+.description {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  opacity: 0.95;
+  cursor: pointer;
+}
+/* <===================================================================Part 2- Section================================================================> */
+
+ 
+/* <!----------------Section what-we-do-----------------------> */
+
+
+.what-we-do {
+  padding: 80px 0;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.what-we-do h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service {
+  flex: 1 1 30%;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service span {
+  font-size: 3rem;
+  color: #e63946;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.service h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+
+/* <!-- <==========================================Part 3- Section====================================================================================> --> */
+
+/* <!-----Section Our results----> */
+
+                               
+
+
+.our-results {
+  padding: 80px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.our-results h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.our-results .subtitle {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.result h3 {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.bar {
+  background-color: #eee;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background-color: #e63946;
+  border-radius: 10px 0 0 10px;
+}
+
+/* Simulated values */
+.fill-1 {
+  width: 90%;
+}
+
+.fill-2 {
+  width: 95%;
+}
+
+.fill-3 {
+  width: 15%; /* Assuming low return rate is good */
+}
+                                      
+
+
+/* <!-- <==========================================Part 4- Section====================================================================================> -->
+<!-- Contact us --> */
+
+
+.contact-us {
+  padding: 80px 0;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.contact-us h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.contact-us .subtitle {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #e63946;
+  outline: none;
+}
+
+.contact-form .cta-button {
+  background-color: #e63946;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form .cta-button:hover {
+  background-color: #ff6b6b;
+}
+
+
+/* <!-- <==========================================Part 5- Section====================================================================================> -->
+<!-- Footer --> */
+
+
+.site-footer {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo img {
+  height: 40px;
+  width: auto;
+}
+
+.footer-nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: lowercase;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #ff6b6b;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .footer-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-content {
+    gap: 30px;
+  }
+}

@@ -1,0 +1,71 @@
+
+.pentagon-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.pentagon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.pentagon {
+  width: 100px;
+  height: 100px;
+  background: #e63946;
+  clip-path: polygon(
+    50% 0%,
+    100% 38%,
+    82% 100%,
+    18% 100%,
+    0% 38%
+  );
+  transition: transform 0.3s ease;
+}
+
+.pentagon:hover {
+  transform: scale(1.1);
+}
+
+.pentagon-box p {
+  color: #333;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Optional: dark background to make pentagons pop */
+.our-results {
+  background-color: #f1f1f1;
+}
+
+
+
+
+.pentagon {
+  animation: bounceIn 1s ease forwards;
+  transform-origin: center;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5) rotate(-15deg);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.pentagon:hover {
+  transform: scale(1.1) rotate(5deg);
+}
